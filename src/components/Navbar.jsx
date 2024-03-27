@@ -17,7 +17,7 @@ export default function navbar() {
           <NavLink to='/' >Home</NavLink>
            
            
-          <NavLink to='/Categories'>Categories</NavLink>
+           
            
            
           <NavLink to='/Product'>Products</NavLink>
@@ -30,8 +30,8 @@ export default function navbar() {
       </nav>
       <div className= {style.login}>
         <div className= {style.loginitem} >
-          <button className= {style.log}>Sign in</button>
-          <button href="#" className= {style.log} >Sign Up</button>
+          <NavLink to='/Signin' className={style.log}>Sign in</NavLink>
+          <NavLink to='/SignUp' className= {style.log} >Sign Up</NavLink>
         </div>
       </div>
     </div>

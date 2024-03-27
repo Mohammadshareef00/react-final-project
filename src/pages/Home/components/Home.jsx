@@ -1,6 +1,8 @@
 import style from './Home.module.css';
 import React, { useEffect, useState } from 'react'
 import axios from 'axios';
+import { NavLink} from "react-router-dom";
+
 export default function home() {
     const [categories, setcategories] =useState([]);
   const getcategories = async ()=>{
@@ -18,14 +20,22 @@ export default function home() {
   return (
     <>
      
- 
+  
+     <div className={style.countaier} >  
+ <div className={style.father} >
     { categories.map(categorie =>
-        <div className={style.category} key={categorie.id}>
+   
+     
+       <div className={style.category} key={categorie._id}>
             
-            <img   className={style.category} src={categorie.image.secure_url}/>
-        </div>
-        
+            <img src={categorie.image.secure_url }/>
+           <NavLink to={`/categories/${categorie._id}`}>details</NavLink>
+  </div> 
+    
         )}
+ 
+      </div>
+      </div> 
  
      
     </>
