@@ -1,6 +1,15 @@
+/*import React from 'react'
+
+export default function Sendcode() {
+  return (
+    <div>GGGGG</div>
+  )
+}*/
+
 import axios from 'axios';
 import React, { useState } from 'react'
-import style from './Signin.module.css';
+//import style from './Sendcode.module.css';
+//import style from ' ./sendcode.module.css'
 import { date, object, string} from 'yup';
 import { toast } from 'react-toastify';
 import { useNavigate } from 'react-router-dom';
@@ -8,14 +17,14 @@ import { NavLink } from 'react-router-dom'
 
 
 
-export default function Signin() {
+export default function Sendcode() {
 
   const Navigate = useNavigate();
 
   const [user ,setuser ] = useState(
     {
        email :'',
-      password :'',
+      
      });
 
     const [errors,setErrors]=useState([]);
@@ -38,7 +47,7 @@ export default function Signin() {
      const signinSchema = object(
         {
        email :string().min(5). email() ,
-      password :string().min(7).max(20).required() ,
+      
          }
       );
 
@@ -64,18 +73,18 @@ export default function Signin() {
       const validate =await validateData();
       
       
-    const {data}=await axios.post(`${import.meta.env.VITE_API_URL}/auth/signin`,
+    const {data}=await axios.patch(`${import.meta.env.VITE_API_URL}/auth/sendcode`,
      {
         email:user.email,
-        password:user.password
+        
     }
     );
           localStorage.setItem('userToken',data.token);
           
      if (data.message =='success'){
-      toast(' your are Signin successfoly ')
+      toast(' your are send code successfoly ')
       
-      Navigate('/');
+      Navigate('/Forget');
      
     }
      setLoader(false); 
@@ -85,11 +94,11 @@ export default function Signin() {
      
   return (
     <>
-    <h2 className={style.countaier} >signin</h2>
+    <h2   >Sendcode</h2>
 
     {
       errors.length > 0 ? errors.map ( error=>
-        <p  className={style.error}>{error}</p>
+        <p  >{error}</p>
       ) : ''
     }
 
@@ -102,16 +111,12 @@ export default function Signin() {
       <label>email</label>
       <input type='email' value={user.email} name='email' onChange={handelchange}/> 
 </div>  
-    <div>
-
-      <label>password</label>
-      <input type='password' value={user.password} name='password' onChange={handelchange}/> 
-</div>      
+      
   
-      <button type='submit '>{!loader?'signin':'wait...'}</button>
+      <button type='submit '>{!loader?'Sendcode':'wait...'}</button>
       <br></br>
 
-      < NavLink to= '/Sendcode'> forgot password </NavLink>
+      
 
 
     </form>
@@ -120,3 +125,5 @@ export default function Signin() {
     </>
   )
 }
+
+

@@ -1,0 +1,240 @@
+.footer{
+  border-top: 1px solid var(--white-95, #2f2f99);
+
+    display: flex;
+      flex-wrap: wrap;
+    padding: 60px 0 20px 0;
+     flex-direction:column;
+    height: fit-content;
+    width:calc(100% - 120px);
+    margin: auto;
+     
+        }
+    
+         
+    
+        .start{
+          width:calc((100% - 30px) / 2);
+           
+          
+        }
+        .right{
+          width:calc((100% - 100px) / 2);
+         display: flex;
+         gap: 80px;
+         flex-wrap: wrap;
+           
+         
+    
+        }
+    
+        .contact ul{
+         display: flex;
+         flex-direction: column;
+         gap: 10px;
+        
+        }
+    
+        .contact ul li{
+          display: flex;
+          gap: 15px;
+          padding: 10px;
+          
+        }
+         
+        .contants a{
+         
+          
+         color: rgb(15, 15, 15);
+       
+    
+        }
+    
+        .contants{
+        
+         display: flex;
+     flex-direction: column;
+        gap: 5px;
+          
+        }
+         .end{
+          margin: auto;
+         }
+    
+         .rowww{
+          display: flex;
+          border-bottom: 1px solid var(--white-95, #F1F1F3);
+            flex-wrap: wrap;
+             width: 100%;
+             height: fit-content;
+            gap: 50px;
+         }
+    
+         .right-contants svg{
+          border-radius: 6px;
+    border: 1px solid var(--White-95, #F1F1F3);
+    background: var(--White-97, #F7F7F8);
+     padding: 12px;
+     box-sizing: content-box;
+     
+     
+         }
+         .mmmmmmm{
+          display: flex;
+    padding: 12px;
+     
+    gap: 10px;
+     
+         }
+    
+     
+        .footer nav a{
+           
+          display: flex;
+          flex-direction: column;
+          flex-wrap: wrap;
+         padding: 5px;
+        
+          }
+
+          .name{
+            border-radius: 8px;
+        background: var(--orange-50, #FF9500);
+        order: 0; 
+        padding: 10px;
+        width: fit-content;
+
+          }
+            
+
+          header nav svg{
+            display: none;
+            
+         }
+         
+         @media screen and (min-width:0) and (max-width:760px) {
+            .navbar-item{
+             display:none;
+               
+            }
+   
+        }
+   
+        @media screen and (min-width:0) and (max-width:760px) {
+         header nav svg{
+            display:block;
+             
+            
+         }
+   
+     }
+   
+   
+   
+   @media screen and (min-width:0) and (max-width:433px) {
+      .login {
+         flex-wrap: nowrap;
+         
+      }
+    }
+   
+    @media screen and (min-width:0) and (max-width:760px) {
+      .navbar {
+        order: 1;
+    
+   justify-content: end;
+      }
+    }
+   
+    @media screen and (min-width:0) and (max-width:760px) {
+      .rowww{
+        flex-direction: column ;
+       
+      }
+   
+   }
+   
+    
+   
+   
+   @media screen and (min-width:0) and (max-width:760px) {
+      .svgnone{
+          display: none;
+      }
+   
+   }
+    
+   
+   @media screen and (min-width:0) and (max-width:1036px) {
+      .card {
+         width:calc((100% - 80px) / 2);
+      }
+   
+   }
+   
+   
+   @media screen and (min-width:0) and (max-width:856px) {
+      .card {
+         width:calc((100% - 10px) / 1);
+         
+      }
+   
+   }
+   
+   
+   
+   @media screen and (min-width:0) and (max-width:856px) {
+      .cours{
+         width:calc((100% - 10px) /1);
+         
+      }
+   
+   }
+   
+   @media screen and (min-width:0) and (max-width:856px) {
+      .testmon{
+         width:calc((100% - 0px) /1);
+          
+      }
+   
+   }
+   
+   
+   
+   @media screen and (min-width:0) and (max-width:856px) {
+      .contaner2{
+         width: 100%;
+          
+      }
+   
+   }
+   
+   @media screen and (min-width:0) and (max-width:856px) {
+      .roww{
+       flex-wrap: wrap;
+        width:100%;
+         
+      }
+   
+   }
+   
+   @media screen and (min-width:0) and (max-width:856px) {
+      .roww p{
+        
+        width: 100%;
+         
+      }
+   
+   }
+   
+    
+    
+   @media screen and (min-width:0) and (max-width:434px) {
+      .countaier {
+        
+      width: 100%;
+      }
+   
+   }
+    
+          

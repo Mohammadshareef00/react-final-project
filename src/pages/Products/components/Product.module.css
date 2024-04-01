@@ -8,14 +8,18 @@
   .category {
    
    padding-top: 30px;
-   
-   width: 100%;
+  
+    
    }
   
   .father{
-     display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
+      display: flex; 
+       gap: 10px;
+       flex-wrap: wrap;
+       gap: 200px;
+         
+       margin-bottom: 50px;
+
   }
   
   .countaier{
@@ -28,6 +32,6 @@
 
   .product{
     
-    border-radius: 30px;
- 
+    border-radius: 15px;
+     
   }

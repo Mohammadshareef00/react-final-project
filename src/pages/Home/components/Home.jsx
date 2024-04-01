@@ -6,7 +6,7 @@ import { NavLink} from "react-router-dom";
 export default function home() {
     const [categories, setcategories] =useState([]);
   const getcategories = async ()=>{
-    const {data} =await axios.get(`https://ecommerce-node4.vercel.app/categories/active?page=1&limit=10`);
+    const {data} =await axios.get(`https://ecommerce-node4-five.vercel.app/categories/active?page=1&limit=10`);
     setcategories(data.categories);
   }
 
@@ -31,6 +31,8 @@ export default function home() {
             <img src={categorie.image.secure_url }/>
            <NavLink to={`/categories/${categorie._id}`}>details</NavLink>
   </div> 
+
+
     
         )}
  
@@ -38,6 +40,8 @@ export default function home() {
       </div> 
  
      
+      
+      
     </>
   )
 }

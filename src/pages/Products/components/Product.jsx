@@ -7,7 +7,7 @@ import style from './Product.module.css';
 export default function product() {
     const [products, setproducts] =useState([]);
   const getproducts = async ()=>{
-    const {data} =await axios.get(`https://ecommerce-node4.vercel.app/products?page=1&limit=10`);
+    const {data} =await axios.get(`https://ecommerce-node4-five.vercel.app/products?page=1&limit=10`);
     setproducts(data.products);
   }
 

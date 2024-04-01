@@ -7,7 +7,7 @@ export default function SubProduct() {
   const {id}=  useParams('id');
   const [products,setproducts] =useState ([]);
   const getProduct =async ()=>{
-    const {data} = await axios.get (`https://ecommerce-node4.vercel.app/products/category/${id} `);
+    const {data} = await axios.get (`https://ecommerce-node4-five.vercel.app/products/category/${id} `);
     
     setproducts(data.products);
    };

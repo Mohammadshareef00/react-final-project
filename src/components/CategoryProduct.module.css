@@ -1,0 +1,33 @@
+
+ 
+  
+  .category {
+   
+   padding-top: 30px;
+  
+    
+   }
+  
+  .father{
+      display: flex; 
+       gap: 10px;
+       flex-wrap: wrap;
+       gap: 200px;
+         
+       margin-bottom: 50px;
+
+  }
+  
+  .countaier{
+    
+    width:calc(100% - 120px);
+   margin: auto;
+  
+  }
+
+
+  .product{
+    
+    border-radius: 15px;
+     
+  }

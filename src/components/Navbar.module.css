@@ -64,12 +64,17 @@ padding: 10px;
 
  .login{
    order: 0;
-   flex-wrap: nowrap;
-    
+     display: flex;
+     gap: 10px;
+     padding: 10px ;
+     flex-wrap: wrap;
   }
  .login-item{
-   flex-wrap: nowrap;
-   
+   display: flex;
+   gap: 10px;
+   padding: 10px ;
+   flex-wrap: wrap;
+
  } 
  
 
@@ -77,7 +82,135 @@ padding: 10px;
     border-radius: 6px;
  color: var(--absolute-white, #050505);
 padding: 10px;
-background: var(--orange-50, #FF9500);
+ 
  }
 
-  
+ header nav svg{
+   display: none;
+   
+}
+
+@media screen and (min-width:0) and (max-width:760px) {
+   .navbaritem{
+    display:none;
+      
+   }
+
+}
+
+@media screen and (min-width:0) and (max-width:760px) {
+header nav svg{
+   display:block;
+    
+    
+}
+
+}
+
+
+
+@media screen and (min-width:0) and (max-width:433px) {
+.login {
+flex-wrap: nowrap;
+
+}
+}
+
+@media screen and (min-width:0) and (max-width:760px) {
+.navbar {
+order: 1;
+
+justify-content: end;
+}
+}
+
+@media screen and (min-width:0) and (max-width:760px) {
+.rowww{
+flex-direction: column ;
+
+}
+
+}
+
+
+
+
+@media screen and (min-width:0) and (max-width:760px) {
+.svgnone{
+ display: none;
+}
+
+}
+
+
+@media screen and (min-width:0) and (max-width:1036px) {
+.card {
+width:calc((100% - 80px) / 2);
+}
+
+}
+
+
+@media screen and (min-width:0) and (max-width:856px) {
+.card {
+width:calc((100% - 10px) / 1);
+
+}
+
+}
+
+
+
+@media screen and (min-width:0) and (max-width:856px) {
+.cours{
+width:calc((100% - 10px) /1);
+
+}
+
+}
+
+@media screen and (min-width:0) and (max-width:856px) {
+.testmon{
+width:calc((100% - 0px) /1);
+ 
+}
+
+}
+
+
+
+@media screen and (min-width:0) and (max-width:856px) {
+.contaner2{
+width: 100%;
+ 
+}
+
+}
+
+@media screen and (min-width:0) and (max-width:856px) {
+.roww{
+flex-wrap: wrap;
+width:100%;
+
+}
+
+}
+
+@media screen and (min-width:0) and (max-width:856px) {
+.roww p{
+
+width: 100%;
+
+}
+
+}
+
+
+
+@media screen and (min-width:0) and (max-width:434px) {
+.countaier {
+
+width: 100%;
+}
+
+}

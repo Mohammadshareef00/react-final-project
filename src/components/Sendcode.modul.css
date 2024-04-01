@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .countaier{
+  
+    width:calc(100% - 120px);
+  margin: auto;
+ 
+   }
+   
+  form {
+    width: 300px;
+    margin: 0 auto;
+   }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+
+  .error{
+     
+    width:calc(100% - 120px);
+  margin: auto;
+    width: 30%;
+    height: 50px;
+    
+     
+  }
